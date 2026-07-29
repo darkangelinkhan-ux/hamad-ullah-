@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamad ullah Wafai — Full Stack Developer & Ecommerce Specialist</title>
+<meta name="description" content="Full Stack Web Developer building business websites, CRM systems, and ecommerce stores with WordPress, Shopify, and custom PHP/Laravel development.">
+
+<!-- ===================== FAVICON ===================== -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="alternate icon" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+
+<!-- ===================== OPEN GRAPH (Facebook / WhatsApp / LinkedIn) ===================== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hamad ullah Wafai — Portfolio">
+<meta property="og:title" content="Hamad ullah Wafai — Full Stack Developer & Ecommerce Specialist">
+<meta property="og:description" content="Full Stack Web Developer building business websites, CRM systems, and ecommerce stores with WordPress, Shopify, and custom PHP/Laravel development.">
+<meta property="og:image" content="https://REPLACE-WITH-YOUR-DOMAIN.com/i.jpg">
+<meta property="og:url" content="https://REPLACE-WITH-YOUR-DOMAIN.com/">
+
+<!-- ===================== TWITTER CARD ===================== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hamad ullah Wafai — Full Stack Developer & Ecommerce Specialist">
+<meta name="twitter:description" content="Full Stack Web Developer building business websites, CRM systems, and ecommerce stores with WordPress, Shopify, and custom PHP/Laravel development.">
+<meta name="twitter:image" content="https://REPLACE-WITH-YOUR-DOMAIN.com/i.jpg">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark no-scroll">
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div id="loading-screen">
+    <div class="loading-glow"></div>
+    <div class="loading-sparkles" id="loading-sparkles"></div>
+    <div class="loading-content">
+      <div class="loading-mark-wrap">
+        <div class="loading-ring"></div>
+        <div class="loading-ring reverse"></div>
+        <div class="loading-mark">HW</div>
+      </div>
+      <div class="loading-name">HAMAD ULLAH WAFAI</div>
+      <div class="loading-tagline">Full Stack Developer &amp; Ecommerce Specialist</div>
+      <div class="loading-bar-wrap">
+        <div class="loading-bar-track">
+          <div class="loading-bar-fill" id="loading-bar-fill"></div>
+        </div>
+        <div class="loading-bar-labels">
+          <span>LOADING</span>
+          <span id="loading-percent">0%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== CUSTOM CURSOR ===================== -->
+  <div id="custom-cursor"></div>
+
+  <!-- ===================== SCROLL PROGRESS ===================== -->
+  <div id="scroll-progress-wrap">
+    <div id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar">
+    <div class="navbar-inner container">
+      <a href="#home" class="logo">
+        <div class="logo-mark">HW</div>
+        <span class="logo-text">Hamad<span>.</span></span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#home" data-section="home">Home</a>
+        <a href="#about" data-section="about">About</a>
+        <a href="#education" data-section="education">Education</a>
+        <a href="#skills" data-section="skills">Skills</a>
+        <a href="#experience" data-section="experience">Experience</a>
+        <a href="#projects" data-section="projects">Projects</a>
+        <a href="#results" data-section="results">Results</a>
+        <a href="#services" data-section="services">Services</a>
+        <a href="#faq" data-section="faq">FAQ</a>
+        <a href="#contact" data-section="contact">Contact</a>
+      </div>
+
+      <div class="navbar-right">
+        <a href="#contact" class="hire-me-btn">
+          <span class="ping-dot"></span>
+          Contact Me
+        </a>
+        <div class="mobile-toggle-wrap">
+          <button class="mobile-toggle" id="mobile-menu-open" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== MOBILE MENU ===================== -->
+  <div id="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <div class="logo-mark">HW</div>
+        <span class="logo-text">Hamad<span>.</span></span>
+      </div>
+      <button class="mobile-toggle" id="mobile-menu-close" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="mobile-menu-links" id="mobile-menu-links">
+      <a href="#home" data-section="home"><span class="num">01.</span>Home</a>
+      <a href="#about" data-section="about"><span class="num">02.</span>About</a>
+      <a href="#education" data-section="education"><span class="num">03.</span>Education</a>
+      <a href="#skills" data-section="skills"><span class="num">04.</span>Skills</a>
+      <a href="#experience" data-section="experience"><span class="num">05.</span>Experience</a>
+      <a href="#projects" data-section="projects"><span class="num">06.</span>Projects</a>
+      <a href="#results" data-section="results"><span class="num">07.</span>Results</a>
+      <a href="#services" data-section="services"><span class="num">08.</span>Services</a>
+      <a href="#faq" data-section="faq"><span class="num">09.</span>FAQ</a>
+      <a href="#contact" data-section="contact"><span class="num">10.</span>Contact</a>
+    </div>
+    <div class="mobile-menu-footer">
+      <a href="#contact" class="mobile-hire-btn" id="mobile-hire-btn">Contact Me</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section id="home">
+      <div class="hero-bg">
+        <div class="hero-grid-overlay"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="hero-particles" id="hero-particles"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-center">
+          <h1 class="hero-title-v2">
+            Hello, I'm <span class="text-gradient">Hamad ullah Wafai</span>
+          </h1>
+
+          <h2 class="hero-role-line">
+            I'm a <span class="text-gradient" id="typewriter-role">Full Stack Developer</span><span class="cursor-blink">|</span>
+          </h2>
+
+          <p class="hero-tagline-v2">Full Stack Web Developer building business websites, CRM systems, and ecommerce stores with WordPress, Shopify, and custom PHP/Laravel development.</p>
+
+          <div class="hero-ctas-v2">
+            <a href="#projects" class="btn-primary">View Portfolio</a>
+            <a href="cv.pdf" class="btn-outline">Download CV</a>
+          </div>
+
+          <div class="hero-socials-v2">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/97431618391?text=Hello%2C%20I%20visited%20your%20portfolio%20and%20want%20to%20connect." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="mouse-scroll-icon"></div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="text-reveal">About Me</h2>
+          <div class="bar section-eyebrow-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="reveal-left">
+            <div class="about-photo-outer">
+              <div class="about-photo-wrap glass">
+                <img src="i.jpg" alt="Hamad ullah Wafai">
+              </div>
+              <div class="about-badge glass">
+                <div class="about-badge-inner">
+                  <span class="status-dot"></span>
+                  <span class="label">Available for new projects</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlights-grid">
+              <div class="highlight-card glass reveal">
+                <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="h-label">Based In</div>
+                <div class="h-value">Doha, Qatar</div>
+              </div>
+              <div class="highlight-card glass reveal">
+                <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="h-label">Work Modes</div>
+                <div class="h-value">Full-time &amp; Freelance</div>
+              </div>
+              <div class="highlight-card glass reveal">
+                <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="h-label">Stack</div>
+                <div class="h-value">PHP, Laravel, React &amp; Vue</div>
+              </div>
+              <div class="highlight-card glass reveal">
+                <div class="icon"><i class="fa-solid fa-award"></i></div>
+                <div class="h-label">Specialization</div>
+                <div class="h-value">Ecommerce &amp; CMS Development</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal-right">
+            <div class="about-bio">
+              <p>I'm a Full Stack Web Developer based in Doha, Qatar, building business websites, CRM dashboards, and ecommerce stores with PHP/Laravel, WordPress, and Shopify — backed by technical SEO and full hosting/SSL setup, so every project ships fast, secure, and easy to find on Google.</p>
+            </div>
+
+            <div class="about-stats">
+              <div class="stat-card glass reveal">
+                <div class="stat-num" data-count="10" data-suffix="+">0</div>
+                <div class="stat-label">Projects Delivered</div>
+              </div>
+              <div class="stat-card glass reveal">
+                <div class="stat-num" data-count="15" data-suffix="+">0</div>
+                <div class="stat-label">Technologies Used</div>
+              </div>
+              <div class="stat-card glass reveal">
+                <div class="stat-num" data-count="3" data-suffix="">0</div>
+                <div class="stat-label">CMS Platforms (WP, Shopify, Custom)</div>
+              </div>
+              <div class="stat-card glass reveal">
+                <div class="stat-num" data-count="100" data-suffix="%">0</div>
+                <div class="stat-label">Projects Delivered on Scope</div>
+              </div>
+            </div>
+
+            <div class="about-cta-row">
+              <a href="#projects" class="btn-primary small">View My Work</a>
+              <a href="#contact" class="btn-outline small">Let's Connect</a>
+              <a href="cv.pdf" class="btn-outline small">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section id="education" class="section-alt2">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="text-reveal">Education &amp; Certifications</h2>
+          <div class="bar section-eyebrow-line"></div>
+          <p>Academic background combining IT fundamentals with hands-on programming training.</p>
+        </div>
+
+        <div class="timeline" id="education-timeline">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot glass"><span class="pip"></span></div>
+            <div class="timeline-spacer"></div>
+            <div class="timeline-card-wrap">
+              <div class="timeline-card glass">
+                <div class="tc-duration"><i class="fa-regular fa-calendar"></i> 2018 – 2022</div>
+                <h3 class="tc-title">Bachelor of Science — Information Technology</h3>
+                <h4 class="tc-sub">University, Khyber Pakhtunkhwa</h4>
+                <div class="tc-location"><i class="fa-solid fa-location-dot"></i><span>KPK, Pakistan</span></div>
+                <p class="tc-desc">Four-year program covering software engineering, database systems, and web technologies — the foundation for my full stack development work today.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item flip reveal">
+            <div class="timeline-dot glass"><span class="pip"></span></div>
+            <div class="timeline-spacer"></div>
+            <div class="timeline-card-wrap">
+              <div class="timeline-card glass">
+                <div class="tc-duration"><i class="fa-regular fa-calendar"></i> 2016 – 2018</div>
+                <h3 class="tc-title">Diploma in Computer Programming</h3>
+                <h4 class="tc-sub">TMUC — The Millennium Universal College</h4>
+                <div class="tc-location"><i class="fa-solid fa-location-dot"></i><span>Islamabad, Pakistan</span></div>
+                <p class="tc-desc">Two-year technical diploma focused on programming fundamentals, OOP, and database management.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot glass"><span class="pip"></span></div>
+            <div class="timeline-spacer"></div>
+            <div class="timeline-card-wrap">
+              <div class="timeline-card glass">
+                <div class="tc-duration"><i class="fa-regular fa-calendar"></i> 2023 – 2024</div>
+                <h3 class="tc-title">Professional Certificate — Digital Marketing</h3>
+                <h4 class="tc-sub">Career Development College of London</h4>
+                <div class="tc-location"><i class="fa-solid fa-location-dot"></i><span>London, United Kingdom</span></div>
+                <p class="tc-desc">SEO, content strategy, and campaign fundamentals — complementing the technical/product SEO work I do on client projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="text-reveal">Skills &amp; Expertise</h2>
+          <div class="bar section-eyebrow-line"></div>
+        </div>
+        <p class="reveal" style="color:hsl(var(--muted-foreground));font-size:18px;max-width:640px;margin-bottom:48px;line-height:1.7;">
+          The technologies I actually use on real projects — spanning frontend, backend, CMS/ecommerce platforms, SEO, and hosting.
+        </p>
+
+        <div class="skills-tabs" id="skills-tabs">
+          <button class="skill-tab active" data-cat="Frontend Development">Frontend Development</button>
+          <button class="skill-tab" data-cat="Backend Development">Backend Development</button>
+          <button class="skill-tab" data-cat="CMS & Ecommerce">CMS &amp; Ecommerce</button>
+          <button class="skill-tab" data-cat="SEO & Search">SEO &amp; Search</button>
+          <button class="skill-tab" data-cat="Hosting & Tools">Hosting &amp; Tools</button>
+        </div>
+
+        <div class="skills-bars" id="skills-bars"></div>
+
+        <div class="skills-all glass reveal">
+          <p>All technologies at a glance</p>
+          <div class="skills-all-list" id="skills-all-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" class="section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="text-reveal">Work Experience</h2>
+          <div class="bar section-eyebrow-line"></div>
+          <p>Hands-on experience building <span style="color:#fff;font-weight:600;">real products for real clients</span> — from Doha, Qatar and remotely for businesses worldwide.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot glass"><i class="fa-solid fa-code" style="color:hsl(var(--primary));font-size:14px;"></i></div>
+            <div class="timeline-spacer"></div>
+            <div class="timeline-card-wrap">
+              <div class="timeline-card glass">
+                <span class="job-type-badge freelance">Freelance / Independent</span>
+                <div class="tc-duration"><i class="fa-regular fa-calendar"></i> Ongoing</div>
+                <h3 class="tc-title">Full Stack Web Developer</h3>
+                <h4 class="tc-sub">Independent — Doha, Qatar &amp; Remote</h4>
+                <div class="tc-location"><i class="fa-solid fa-location-dot"></i><span>Doha, Qatar</span></div>
+                <ul class="tc-achievements">
+                  <li><span class="arrow">▹</span><span>Developed and SEO-optimized corporate and agency websites (Al Rehaab Corporate Services, Stratos Agency) with schema markup, sitemap/robots.txt configuration, and Google Search Console setup.</span></li>
+                  <li><span class="arrow">▹</span><span>Built a tourism website with a booking-focused UI, image galleries, and a full admin panel for product upload and management (Al Annabi Tourism).</span></li>
+                  <li><span class="arrow">▹</span><span>Handled end-to-end technical delivery — hosting on Hostinger/cPanel, SSL, domain management, and professional business email setup — for every project.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item flip reveal">
+            <div class="timeline-dot glass"><i class="fa-brands fa-wordpress-simple" style="color:hsl(var(--primary));font-size:14px;"></i></div>
+            <div class="timeline-spacer"></div>
+            <div class="timeline-card-wrap">
+              <div class="timeline-card glass">
+                <span class="job-type-badge freelance">Freelance / Independent</span>
+                <div class="tc-duration"><i class="fa-regular fa-calendar"></i> Ongoing</div>
+                <h3 class="tc-title">WordPress &amp; Ecommerce Developer</h3>
+                <h4 class="tc-sub">Independent — Doha, Qatar &amp; Remote</h4>
+                <div class="tc-location"><i class="fa-solid fa-location-dot"></i><span>Doha, Qatar</span></div>
+                <ul class="tc-achievements">
+                  <li><span class="arrow">▹</span><span>Built WordPress business websites for clients including AFG Motor, Durnika Steel, and Web Spires — from layout to on-page structure and basic SEO.</span></li>
+                  <li><span class="arrow">▹</span><span>Developed a custom Shopify storefront with hand-coded Liquid theme sections for a UK furniture retailer (Beds N Sofas).</span></li>
+                  <li><span class="arrow">▹</span><span>Set up a WordPress + WooCommerce store end-to-end — product catalog, checkout flow, and responsive storefront — for a UK bedding retailer (Tender Sleep Beds).</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot glass"><i class="fa-solid fa-chart-line" style="color:hsl(var(--primary));font-size:14px;"></i></div>
+            <div class="timeline-spacer"></div>
+            <div class="timeline-card-wrap">
+              <div class="timeline-card glass">
+                <span class="job-type-badge freelance">Freelance / Independent</span>
+                <div class="tc-duration"><i class="fa-regular fa-calendar"></i> Ongoing</div>
+                <h3 class="tc-title">CRM &amp; Admin Dashboard Developer</h3>
+                <h4 class="tc-sub">Independent — Doha, Qatar &amp; Remote</h4>
+                <div class="tc-location"><i class="fa-solid fa-location-dot"></i><span>Doha, Qatar</span></div>
+                <ul class="tc-achievements">
+                  <li><span class="arrow">▹</span><span>Built a custom CRM dashboard from scratch for an agency — secure authentication, live analytics cards, Chart.js visualizations, and task/user management.</span></li>
+                  <li><span class="arrow">▹</span><span>Designed the PHP/MySQL data layer behind the dashboard to keep reporting fast and reliable as usage grew.</span></li>
+                  <li><span class="arrow">▹</span><span>Focused on a clean, responsive admin UI so non-technical staff could manage day-to-day operations without training.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item flip reveal">
+            <div class="timeline-dot glass"><i class="fa-solid fa-magnifying-glass-chart" style="color:hsl(var(--primary));font-size:14px;"></i></div>
+            <div class="timeline-spacer"></div>
+            <div class="timeline-card-wrap">
+              <div class="timeline-card glass">
+                <span class="job-type-badge freelance">Freelance / Independent</span>
+                <div class="tc-duration"><i class="fa-regular fa-calendar"></i> Ongoing</div>
+                <h3 class="tc-title">WooCommerce SEO Specialist</h3>
+                <h4 class="tc-sub">Independent — Doha, Qatar &amp; Remote</h4>
+                <div class="tc-location"><i class="fa-solid fa-location-dot"></i><span>Doha, Qatar</span></div>
+                <ul class="tc-achievements">
+                  <li><span class="arrow">▹</span><span>Optimized WooCommerce product pages and category structure for search visibility — titles, meta descriptions, and clean URL slugs.</span></li>
+                  <li><span class="arrow">▹</span><span>Implemented product and category schema markup to improve rich results and search engine understanding of store content.</span></li>
+                  <li><span class="arrow">▹</span><span>Configured XML sitemaps, robots.txt, and Google Search Console for WooCommerce stores to speed up indexing, and ran technical audits fixing crawl errors and page speed issues.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section-alt2">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="text-reveal">Selected Work</h2>
+          <div class="bar section-eyebrow-line"></div>
+        </div>
+
+        <div class="project-filters" id="project-filters">
+          <button class="filter-btn glass active" data-filter="All">All</button>
+          <button class="filter-btn glass" data-filter="Full Stack">Full Stack</button>
+          <button class="filter-btn glass" data-filter="Ecommerce">Ecommerce</button>
+          <button class="filter-btn glass" data-filter="Web Design">Web Design</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== CLIENT RESULTS (Satisfaction + Testimonials) ===================== -->
+    <section id="results">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="text-reveal">Project Highlights</h2>
+          <div class="bar section-eyebrow-line"></div>
+          <p>A quick snapshot of the work delivered so far — across industries and platforms.</p>
+        </div>
+
+        <div class="satisfaction-stats-row">
+          <div class="sat-stat glass reveal">
+            <div class="sat-stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <div class="sat-stat-num" data-count="10" data-suffix="+">0</div>
+            <div class="sat-stat-label">Projects Delivered</div>
+          </div>
+          <div class="sat-stat glass reveal">
+            <div class="sat-stat-icon"><i class="fa-solid fa-building"></i></div>
+            <div class="sat-stat-num" data-count="4" data-suffix="">0</div>
+            <div class="sat-stat-label">Industries Served</div>
+          </div>
+          <div class="sat-stat glass reveal">
+            <div class="sat-stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="sat-stat-num" data-count="3" data-suffix="">0</div>
+            <div class="sat-stat-label">CMS/Platforms (WordPress, Shopify, Custom)</div>
+          </div>
+          <div class="sat-stat glass reveal">
+            <div class="sat-stat-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="sat-stat-num" data-count="2" data-suffix="">0</div>
+            <div class="sat-stat-label">Countries — Qatar &amp; UK Clients</div>
+          </div>
+        </div>
+
+        <!-- Project mix — real breakdown of delivered work -->
+        <div class="testimonials-head reveal">
+          <h3>Project Mix</h3>
+          <div class="bar section-eyebrow-line"></div>
+        </div>
+
+        <div class="project-mix-wrap">
+          <div class="project-mix-donut-wrap glass reveal-left">
+            <svg class="project-mix-donut" id="project-mix-donut" viewBox="0 0 200 200">
+              <circle class="pm-track" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="pm-center">
+              <span class="pm-total" id="pm-total">0</span>
+              <span class="pm-label">Projects</span>
+            </div>
+          </div>
+          <div class="project-mix-legend reveal-right" id="project-mix-legend"></div>
+        </div>
+
+        <!-- Companies worked with — names only, no invented quotes/reviews -->
+        <div class="testimonials-head reveal">
+          <h3>Companies I've Worked With</h3>
+          <div class="bar section-eyebrow-line"></div>
+        </div>
+        <div class="clients-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:32px;">
+          <a href="https://alrehaabservices.com/" target="_blank" rel="noopener noreferrer" class="timeline-card glass client-card reveal" style="padding:22px;text-align:center;text-decoration:none;">
+            <div class="tc-title" style="font-size:16px;margin-bottom:4px;">Al Rehaab Corporate Services</div>
+            <div class="tc-sub" style="font-size:12.5px;">Corporate Business Website</div>
+          </a>
+          <a href="https://stratosagency.net/" target="_blank" rel="noopener noreferrer" class="timeline-card glass client-card reveal" style="padding:22px;text-align:center;text-decoration:none;">
+            <div class="tc-title" style="font-size:16px;margin-bottom:4px;">Stratos Agency</div>
+            <div class="tc-sub" style="font-size:12.5px;">Agency Website + CRM Dashboard</div>
+          </a>
+          <a href="https://alannabitourism.com/" target="_blank" rel="noopener noreferrer" class="timeline-card glass client-card reveal" style="padding:22px;text-align:center;text-decoration:none;">
+            <div class="tc-title" style="font-size:16px;margin-bottom:4px;">Al Annabi Tourism</div>
+            <div class="tc-sub" style="font-size:12.5px;">Tourism Website + Admin Panel</div>
+          </a>
+          <a href="https://afgmotor.com/" target="_blank" rel="noopener noreferrer" class="timeline-card glass client-card reveal" style="padding:22px;text-align:center;text-decoration:none;">
+            <div class="tc-title" style="font-size:16px;margin-bottom:4px;">AFG Motor</div>
+            <div class="tc-sub" style="font-size:12.5px;">WordPress Website</div>
+          </a>
+          <a href="https://durnikasteeI.com/" target="_blank" rel="noopener noreferrer" class="timeline-card glass client-card reveal" style="padding:22px;text-align:center;text-decoration:none;">
+            <div class="tc-title" style="font-size:16px;margin-bottom:4px;">Durnika Steel</div>
+            <div class="tc-sub" style="font-size:12.5px;">WordPress Website</div>
+          </a>
+          <a href="https://webspires.co.uk/" target="_blank" rel="noopener noreferrer" class="timeline-card glass client-card reveal" style="padding:22px;text-align:center;text-decoration:none;">
+            <div class="tc-title" style="font-size:16px;margin-bottom:4px;">Web Spires</div>
+            <div class="tc-sub" style="font-size:12.5px;">WordPress Business Website</div>
+          </a>
+          <a href="https://www.bedsnsofas.co.uk/" target="_blank" rel="noopener noreferrer" class="timeline-card glass client-card reveal" style="padding:22px;text-align:center;text-decoration:none;">
+            <div class="tc-title" style="font-size:16px;margin-bottom:4px;">Beds N Sofas</div>
+            <div class="tc-sub" style="font-size:12.5px;">Shopify Ecommerce Store</div>
+          </a>
+          <a href="https://tendersleepbeds.co.uk/" target="_blank" rel="noopener noreferrer" class="timeline-card glass client-card reveal" style="padding:22px;text-align:center;text-decoration:none;">
+            <div class="tc-title" style="font-size:16px;margin-bottom:4px;">Tender Sleep Beds</div>
+            <div class="tc-sub" style="font-size:12.5px;">WooCommerce Ecommerce Website</div>
+          </a>
+        </div>
+
+        <!-- Client feedback -->
+        <div class="testimonials-head reveal">
+          <h3>What Clients Say</h3>
+          <div class="bar section-eyebrow-line"></div>
+        </div>
+
+        <div class="testimonials-carousel reveal">
+          <button class="testi-nav-btn prev" id="testi-prev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="testimonials-track" id="testimonials-track"></div>
+          <button class="testi-nav-btn next" id="testi-next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="testimonials-dots" id="testimonials-dots"></div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="text-reveal">What I Offer</h2>
+          <div class="bar section-eyebrow-line"></div>
+          <p>End-to-end web development, ecommerce, and SEO services — from CRM systems to online stores. Every engagement is handled with clear communication and a focus on getting real business results.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card glass reveal">
+            <div class="service-watermark"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <h3>Ecommerce Development</h3>
+            <p>End-to-end Shopify and WooCommerce store development — from theme customization and custom code to product setup and checkout configuration, built to actually sell.</p>
+            <div class="service-price-row"><span class="from">Starting from</span><span class="price">$800</span></div>
+          </div>
+          <div class="service-card glass reveal">
+            <div class="service-watermark"><i class="fa-solid fa-code"></i></div>
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Full Stack Web Development</h3>
+            <p>Custom web applications and CRM systems using PHP, Laravel, and MySQL, paired with React.js or Vue.js frontends. From admin dashboards to full business platforms.</p>
+            <div class="service-price-row"><span class="from">Starting from</span><span class="price">$1,200</span></div>
+          </div>
+          <div class="service-card glass reveal">
+            <div class="service-watermark"><i class="fa-solid fa-pen-nib"></i></div>
+            <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>WordPress &amp; Business Websites</h3>
+            <p>Custom business websites and WordPress builds — responsive design, clean code, and pages structured for both users and search engines from day one.</p>
+            <div class="service-price-row"><span class="from">Starting from</span><span class="price">$400</span></div>
+          </div>
+          <div class="service-card glass reveal">
+            <div class="service-watermark"><i class="fa-solid fa-chart-column"></i></div>
+            <div class="service-icon"><i class="fa-solid fa-chart-column"></i></div>
+            <h3>Technical SEO</h3>
+            <p>Technical and product SEO — schema markup, sitemap.xml and robots.txt configuration, meta tags, canonical URLs, and Google Search Console setup and monitoring.</p>
+            <div class="service-price-row"><span class="from">Starting from</span><span class="price">$500</span></div>
+          </div>
+          <div class="service-card glass reveal">
+            <div class="service-watermark"><i class="fa-solid fa-server"></i></div>
+            <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>Hosting &amp; Business Setup</h3>
+            <p>Full hosting and domain setup on Hostinger/cPanel, SSL configuration, professional business email setup, and ongoing technical support after launch.</p>
+            <div class="service-price-row"><span class="from">Starting from</span><span class="price">$150</span></div>
+          </div>
+          <div class="service-card glass reveal">
+            <div class="service-watermark"><i class="fa-solid fa-table-columns"></i></div>
+            <div class="service-icon"><i class="fa-solid fa-table-columns"></i></div>
+            <h3>CRM &amp; Admin Dashboards</h3>
+            <p>Custom CRM and admin dashboard systems with authentication, analytics, charts, and data management — built around how your team actually works.</p>
+            <div class="service-price-row"><span class="from">Starting from</span><span class="price">$700</span></div>
+          </div>
+        </div>
+
+        <div class="services-cta glass reveal">
+          <h3>Need a custom package?</h3>
+          <p>Every project is unique. Let's discuss your requirements and I'll put together a tailored proposal that fits your goals and budget.</p>
+          <a href="#contact" class="btn-primary" style="position:relative;">Get a Free Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="section-alt2">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="text-reveal">Frequently Asked Questions</h2>
+          <div class="bar section-eyebrow-line"></div>
+          <p>Answers to the questions I get asked most before a project kicks off. Don't see yours — just ask.</p>
+        </div>
+
+        <div class="faq-list" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section-alt">
+      <div class="container">
+        <div class="section-header contact-header reveal">
+          <h2 class="text-reveal">Let's Work Together</h2>
+          <div class="bar section-eyebrow-line"></div>
+          <p>Whether you have an ecommerce project, a web application to build, or need a digital marketing strategy — I'm ready to deliver. Let's talk.</p>
+        </div>
+
+        <div class="availability-badge-wrap reveal">
+          <div class="availability-badge glass">
+            <span class="status-dot"></span>
+            <span class="txt">Currently available for new projects</span>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <h3>Ready to bring your vision to life?</h3>
+            <p>I'm based in Doha, Qatar, and work with clients internationally. Remote collaboration is seamless — I'm available across time zones.</p>
+
+            <div class="contact-cards">
+              <a href="mailto:devhamad19@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-card glass">
+                <div class="cc-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div><h4>Email</h4><p>devhamad19@gmail.com</p></div>
+              </a>
+              <a href="https://wa.me/97431618391?text=Hello%2C%20I%20visited%20your%20portfolio%20and%20want%20to%20connect." target="_blank" rel="noopener noreferrer" class="contact-card glass">
+                <div class="cc-icon"><i class="fa-solid fa-phone"></i></div>
+                <div><h4>Phone / WhatsApp</h4><p>+974 3161 8391</p></div>
+              </a>
+              <div class="contact-card glass">
+                <div class="cc-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div><h4>Location</h4><p>Doha, Qatar — Available for Remote &amp; On-site work</p></div>
+              </div>
+            </div>
+
+            <a href="https://wa.me/97431618391?text=Hello%2C%20I%20visited%20your%20portfolio%20and%20want%20to%20connect." target="_blank" rel="noopener noreferrer" class="whatsapp-cta">
+              <i class="fa-brands fa-whatsapp wa-icon"></i>
+              <div>
+                <div class="wa-title">Chat on WhatsApp</div>
+                <div class="wa-sub">Usually responds within an hour</div>
+              </div>
+              <i class="fa-solid fa-message wa-arrow"></i>
+            </a>
+
+            <div class="social-find">
+              <p>Find me on</p>
+              <div class="social-find-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="glass" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="glass" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="glass" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal-right">
+            <form class="contact-form glass" id="contact-form">
+              <div class="form-success" id="form-success">
+                <i class="fa-solid fa-circle-check check-icon"></i>
+                <h4>Message Sent!</h4>
+                <p>I'll get back to you very soon.</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" required placeholder="Your name">
+                </div>
+                <div class="form-field">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" required placeholder="you@example.com">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" required placeholder="Project inquiry, collaboration...">
+              </div>
+
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" required rows="5" placeholder="Tell me about your project..."></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn" id="form-submit-btn">
+                <span id="submit-btn-content"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-gradient-line"></div>
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-mark">HW</div>
+            <span class="logo-text">Hamad<span>.</span></span>
+          </div>
+          <p>Full Stack Developer &amp; Ecommerce Specialist based in Doha, Qatar. Building websites, CRM systems, and ecommerce stores for clients worldwide.</p>
+          <div class="footer-socials">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="glass" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="glass" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="glass" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="glass" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/97431618391?text=Hello%2C%20I%20visited%20your%20portfolio%20and%20want%20to%20connect." target="_blank" rel="noopener noreferrer" class="glass green" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-nav-list">
+            <a href="#about"><span class="bullet"></span>About</a>
+            <a href="#education"><span class="bullet"></span>Education</a>
+            <a href="#skills"><span class="bullet"></span>Skills</a>
+            <a href="#experience"><span class="bullet"></span>Experience</a>
+            <a href="#projects"><span class="bullet"></span>Projects</a>
+            <a href="#results"><span class="bullet"></span>Results</a>
+            <a href="#services"><span class="bullet"></span>Services</a>
+            <a href="#faq"><span class="bullet"></span>FAQ</a>
+            <a href="#contact"><span class="bullet"></span>Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-info">
+            <p>devhamad19@gmail.com</p>
+            <p>+974 3161 8391</p>
+            <p>Doha, Qatar — Available for Remote &amp; On-site work</p>
+          </div>
+          <a href="#contact" class="footer-available-btn">
+            <span class="dot"></span>
+            Available for work
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year"></span> Hamad ullah Wafai. All rights reserved.</p>
+        <p class="built">Built with HTML, CSS &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== FLOATING BUTTONS ===================== -->
+  <a href="https://wa.me/97431618391?text=Hello%2C%20I%20visited%20your%20portfolio%20and%20want%20to%20connect." target="_blank" rel="noopener noreferrer" id="whatsapp-float" aria-label="Contact on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="portfolio-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

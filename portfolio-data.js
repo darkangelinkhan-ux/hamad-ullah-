@@ -112,6 +112,22 @@ const PROJECTS = [
     category: "Full Stack",
   },
   {
+  title: "SpotFree Carwash & Detailing",
+  description:
+    "A modern service booking and management platform for a Qatar-based carwash, detailing, hospitality, and cleaning business. Features an online booking workflow, dynamic service catalog, pricing management, customer notifications, and an admin dashboard for managing bookings and services.",
+  tech: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Supabase"
+  ],
+  image: "AB.jpg",
+  featured: true,
+  category: "Full Stack",
+  link: "https://YOUR-SPOTFREE-DOMAIN.com",
+},
+  {
     title: "Beds N Sofas — Shopify Store",
     description: "A Shopify ecommerce store for a UK furniture retailer, with custom Liquid theme development and hand-coded storefront sections to match the brand's product catalog.",
     tech: ["Shopify", "Liquid", "HTML5", "CSS3", "JavaScript"],

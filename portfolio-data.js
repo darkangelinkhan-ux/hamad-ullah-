@@ -125,7 +125,7 @@ const PROJECTS = [
   image: "AB.jpg",
   featured: true,
   category: "Full Stack",
-  link: "https://YOUR-SPOTFREE-DOMAIN.com",
+  link: "https://spotfreeqtr.com/",
 },
   {
     title: "Beds N Sofas — Shopify Store",
